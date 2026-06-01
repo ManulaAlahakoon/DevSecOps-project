@@ -52,6 +52,7 @@ jobs:
             dockerhub-password: ${{secrets.password}}
             command: quickview, cves, recommendations
             sarif-file: scout-report.sarif
+            exit-code: true
 
         - name: Upload artifact
           uses: actions/upload-artifact@v7.0.1
