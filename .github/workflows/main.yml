@@ -51,6 +51,7 @@ jobs:
             dockerhub-user: ${{secrets.username}}
             dockerhub-password: ${{secrets.password}}
             command: quickview, cves, recommendations
+            only-severities: critical
             sarif-file: scout-report.sarif
             exit-code: true
 
