@@ -43,7 +43,7 @@ jobs:
             docker-version: 29.5.2
             
         - name: Build docker image
-          runs: docker build -t myapp . 
+          runs: docker build -f Dockerfile -t myapp . 
 
         - name: Docker Scout image scan
           uses: docker/scout-action@v1.21.0
