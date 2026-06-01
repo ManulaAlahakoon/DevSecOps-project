@@ -28,8 +28,3 @@ jobs:
       with:
         name: Bandit scan report
         path: bandit-scan-report.json
-        
-
-    
-      
-    
