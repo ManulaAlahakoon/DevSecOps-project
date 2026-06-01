@@ -29,7 +29,7 @@ jobs:
         name: Bandit scan report
         path: bandit-scan-report.json
 
-    image_scan:
+  image_scan:
       name: Build image and run image scan
       runs-on: ubuntu-latest
 
