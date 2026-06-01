@@ -51,4 +51,11 @@ jobs:
             dockerhub-user: ${{secrets.username}}
             dockerhub-password: ${{secrets.password}}
             command: quickview, cves, recommendations
-            
+            sarif-file: scout-report.sarif
+
+        - name: Upload artifact
+          uses: actions/upload-artifact@v7.0.1
+          if: always()
+          with:
+            name: Scout scan report
+            path: scout-report.sarif
