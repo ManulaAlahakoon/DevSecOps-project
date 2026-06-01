@@ -50,4 +50,3 @@ jobs:
           with:
             command: quickview, cves, recommendations
             
-            
