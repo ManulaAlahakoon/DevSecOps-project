@@ -38,7 +38,7 @@ jobs:
           uses: actions/checkout@v2
 
         - name: Setup docker
-          uses: docker/setup-docker-action@v5.2.0
+          uses: docker-practice/actions-setup-docker@v1
           with:
             docker_version: 29.5.2
             
